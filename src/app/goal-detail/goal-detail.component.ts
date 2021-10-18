@@ -1,5 +1,5 @@
 import {  Component, OnInit,Input,Output,EventEmitter } from '@angular/core';
-import {Goal} from '../goal'
+import {Goal} from '../goal';
 
 @Component({
   selector: 'app-goal-details',
@@ -8,7 +8,7 @@ import {Goal} from '../goal'
 })
 export class GoalDetailsComponent implements OnInit {
 
-  @Input() goal:Goal;
+  // @Input () goals:Goal;
   @Output() isComplete= new EventEmitter<boolean>();
 
   goalDelete(complete:boolean){
