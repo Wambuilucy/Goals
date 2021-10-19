@@ -1,22 +1,25 @@
-import {  Component, OnInit,Input,Output,EventEmitter } from '@angular/core';
-import {Goal} from '../goal';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Goal } from '../goal';
+
 
 @Component({
-  selector: 'app-goal-details',
-  templateUrl: './goal-details.component.html',
-  styleUrls: ['./goal-details.component.css']
+  selector: 'app-goal-detail',
+  templateUrl: './goal-detail.component.html',
+  styleUrls: ['./goal-detail.component.scss']
 })
-export class GoalDetailsComponent implements OnInit {
+export class GoalDetailComponent implements OnInit {
 
-  // @Input () goals:Goal;
-  @Output() isComplete= new EventEmitter<boolean>();
+  @Input() goals:Goal;
 
-  goalDelete(complete:boolean){
+  @Output() isComplete = new EventEmitter<boolean>();
+
+  goalComplete(complete:boolean){
     this.isComplete.emit(complete);
   }
+
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
 }
