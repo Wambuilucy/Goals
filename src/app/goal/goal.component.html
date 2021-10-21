@@ -16,7 +16,7 @@
 
           <button class="btn btn-primary" (click)='toggleDetails(i)'>Toogle Details</button>
 
-          <!-- <app-goal-detail *ngIf="goal.showDescription" [goals]='goals' (isComplete)="deleteGoal($event, i)"></app-goal-detail> -->
+          <app-goal-detail *ngIf="goal.showDescription" (isComplete)="deleteGoal($event, i)"></app-goal-detail>
         </div>
       </ol>
     </div>

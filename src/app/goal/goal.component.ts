@@ -14,7 +14,7 @@ export class GoalComponent implements OnInit {
     new Goal (3, 'learn angular', 'code...code...code till I get it...', new Date(2020,11,27))
    ]
  
-   addNewGoal(goals:any){
+   addNewGoal(goals:Goal){
      let goalLength = this.goals.length;
      goals.id = goalLength++;
      goals.completeDate = new Date(goals.completeDate)
