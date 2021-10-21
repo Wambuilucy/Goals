@@ -8,6 +8,7 @@ import { GoalComponent } from './goal/goal.component';
 import { StrikethroughDirective } from './strikethrough.directive';
 import { DateCountPipe } from './date-count.pipe';
 import { GoalFormComponent } from './goal-form/goal-form.component';
+import { Goal } from './goal.detail/goal.detail.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { GoalFormComponent } from './goal-form/goal-form.component';
     GoalComponent,
     StrikethroughDirective,
     DateCountPipe,
-    GoalFormComponent
+    GoalFormComponent,
+    Goal.DetailComponent
   ],
   imports: [
     BrowserModule,
